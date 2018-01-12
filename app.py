@@ -28,7 +28,9 @@ def index():
         sc.api_call(
           "chat.postMessage",
           channel="#notification",
-          attachments=json.loads(attachments)
+          attachments=json.loads(attachments),
+          icon_url="https://pbs.twimg.com/profile_images/926011456700661760/Ua74xszg_400x400.jpg",
+          username="東急電鉄"
         )
 
     return jsonify(unten2_json)
